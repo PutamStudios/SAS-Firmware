@@ -1,0 +1,20 @@
+{
+  "name": "SASHAL",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pr3y/SAS.git"
+  },
+  "version": "7.3.1",
+  "authors": {
+    "name": "SAS Firmware",
+    "url": "https://sas.computer"
+  },
+  "export": {
+    "include": ["io_expander", "sd_card"]
+  },
+  "frameworks": "*",
+  "platforms": "*",
+  "build": {
+    "libArchive": false
+  }
+}
