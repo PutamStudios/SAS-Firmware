@@ -1,8 +1,12 @@
 name: Compile and Attach Firmware to Release
 
 on:
+  push:
+    branches:
+      - main
   release:
     types: [published, created]
+  workflow_dispatch:
 
 jobs:
   build-and-upload:
@@ -39,6 +43,7 @@ jobs:
           cp .pio/build/m5stack-cplus1_1/firmware.bin ./SAS-m5stack-cplus1_1.bin
 
       - name: Upload Firmware to Release Assets
+        if: github.event_name == 'release'
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
