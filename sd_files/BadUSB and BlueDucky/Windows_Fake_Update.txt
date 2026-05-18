@@ -1,0 +1,10 @@
+REM --- Windows Fake Update Prank ---
+REM --- Safe local educational demo displaying upgrade screen ---
+DELAY 1000
+GUI r
+DELAY 400
+STRINGLN https://fakeupdate.net/win10/
+DELAY 1000
+ENTER
+DELAY 2000
+F11

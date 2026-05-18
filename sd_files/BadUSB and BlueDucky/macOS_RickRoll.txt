@@ -1,0 +1,8 @@
+REM --- macOS RickRoll Payload ---
+REM --- Safe educational demo for Apple Mac devices ---
+DELAY 1000
+GUI-SPACE
+DELAY 600
+STRING https://www.youtube.com/watch?v=dQw4w9WgXcQ
+DELAY 600
+ENTER

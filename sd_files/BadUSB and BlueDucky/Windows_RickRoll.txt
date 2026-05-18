@@ -1,0 +1,8 @@
+REM --- Windows RickRoll Payload ---
+REM --- Safe educational demo that opens YouTube Rickroll ---
+DELAY 1000
+GUI r
+DELAY 400
+STRINGLN https://www.youtube.com/watch?v=dQw4w9WgXcQ
+DELAY 500
+ENTER

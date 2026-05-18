@@ -1,0 +1,21 @@
+REM --- Windows Notepad Ghost Writer ---
+REM --- Safe local demo that types a welcome message ---
+DELAY 1000
+GUI r
+DELAY 400
+STRINGLN notepad.exe
+DELAY 800
+ENTER
+DELAY 500
+STRINGLN ==========================================
+STRINGLN  GREETINGS FROM YOUR SAS BLE KEYBOARD!     
+STRINGLN ==========================================
+STRINGLN  This is a harmless educational BadBLE /   
+STRINGLN  BadUSB keystroke injection showcase.      
+STRINGLN                                            
+STRINGLN  Keystrokes are being typed automatically  
+STRINGLN  by your M5StickC Plus hardware device.     
+STRINGLN                                            
+STRINGLN  No files were modified or damaged.       
+STRINGLN  Have fun experimenting!                   
+STRINGLN ==========================================

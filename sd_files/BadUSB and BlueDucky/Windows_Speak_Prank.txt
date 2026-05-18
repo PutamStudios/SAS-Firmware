@@ -1,0 +1,8 @@
+REM --- Windows Speech Prank ---
+REM --- Safe local educational demo that speaks a funny warning ---
+DELAY 1000
+GUI r
+DELAY 400
+STRINGLN powershell -NoProfile -WindowStyle Hidden -Command "Add-Type -AssemblyName System.Speech; $speak = New-Object System.Speech.Synthesis.SpeechSynthesizer; $speak.Speak('Warning! A friendly antigravity bluetooth keyboard has connected to your machine and is playing this audio message. Have a wonderful day!')"
+DELAY 500
+ENTER

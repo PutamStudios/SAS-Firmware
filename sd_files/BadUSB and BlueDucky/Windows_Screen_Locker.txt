@@ -1,0 +1,4 @@
+REM --- Windows Instant Screen Locker ---
+REM --- Safe hotkey automation demo ---
+DELAY 1000
+GUI l

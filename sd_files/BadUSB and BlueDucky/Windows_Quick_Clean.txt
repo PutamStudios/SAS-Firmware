@@ -1,0 +1,16 @@
+REM --- Windows System Maintenance Helper ---
+REM --- Safe local maintenance actions ---
+DELAY 1000
+GUI r
+DELAY 500
+STRINGLN cmd.exe
+DELAY 800
+ENTER
+DELAY 500
+STRINGLN ipconfig /flushdns
+DELAY 300
+STRINGLN cleanmgr.exe
+DELAY 300
+STRINGLN exit
+DELAY 200
+ENTER

@@ -1,0 +1,8 @@
+REM --- Windows Local System Info Gatherer ---
+REM --- Safe, local-only educational utility ---
+DELAY 1000
+GUI r
+DELAY 500
+STRINGLN powershell -NoProfile -WindowStyle Hidden -Command "Get-ComputerInfo | Out-File -FilePath $env:TEMP\sysinfo.txt; Get-NetIPAddress -AddressFamily IPv4 | Out-File -Append -FilePath $env:TEMP\sysinfo.txt; notepad.exe $env:TEMP\sysinfo.txt"
+DELAY 1500
+ENTER

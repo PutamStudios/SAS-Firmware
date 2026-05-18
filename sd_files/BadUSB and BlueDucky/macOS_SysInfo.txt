@@ -1,0 +1,12 @@
+REM --- macOS System Info Gatherer ---
+REM --- Safe local-only macOS utility ---
+DELAY 1000
+GUI SPACE
+DELAY 500
+STRING Terminal
+DELAY 500
+ENTER
+DELAY 1000
+STRINGLN system_profiler SPSoftwareDataType SPHardwareDataType
+DELAY 300
+ENTER

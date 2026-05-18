@@ -1,0 +1,24 @@
+REM --- Windows CMD Matrix Effect ---
+REM --- Harmless visual demonstration ---
+DELAY 1000
+GUI r
+DELAY 500
+STRINGLN cmd.exe
+DELAY 800
+ENTER
+DELAY 500
+STRINGLN color 0a
+DELAY 300
+STRINGLN mode con: cols=80 lines=25
+DELAY 300
+STRINGLN cls
+DELAY 300
+STRINGLN @echo off
+DELAY 200
+STRINGLN :loop
+DELAY 200
+STRINGLN echo %random% %random% %random% %random% %random% %random% %random% %random% %random% %random%
+DELAY 200
+STRINGLN goto loop
+DELAY 200
+ENTER
